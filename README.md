@@ -1,4 +1,4 @@
-![mariogt nvim setup](/media/gtvim.png "nvim")
+![mariogt nvim setup](/media/gtnvim.png "nvim")
 
 
 ## Overview
