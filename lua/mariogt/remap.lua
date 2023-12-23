@@ -4,10 +4,8 @@ vim.g.mapleader = " "
 -- file explorer
 vim.keymap.set("n", "<leader>¿", vim.cmd.Ex)
 
--- formating indent LSP
-vim.keymap.set("n", "<F12>", function()
-    vim.lsp.buf.format { async = true }
-end)
+-- formating
+vim.keymap.set("n", "<F12>", "gg=G")
 
 -- buffer nav
 vim.keymap.set("n", "<F1>", vim.cmd.bp)    -- next buffer
@@ -15,8 +13,20 @@ vim.keymap.set("n", "<F2>", vim.cmd.bn)    -- prev buffer
 vim.keymap.set("n", "<F3>", vim.cmd.bd)    -- close buffer
 vim.keymap.set("n", "<F4>", vim.cmd.close) -- close window
 
+-- keep cursor in the middle of screen when page up/down
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
+
+-- keep cursor in the middle when searching
+vim.keymap.set("n", "n", "nzzzv")
+vim.keymap.set("n", "N", "Nzzzv")
+
 -- copy all
 vim.keymap.set("n", "<F5>", "<cmd>%y+<CR>")
+
+-- copy to vim/system clipboard
+vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]]) -- vim clipboard
+vim.keymap.set("n", "<leader>Y", [["+Y]])          -- system clipboard
 
 -- quit & saving
 vim.keymap.set("n", "<F6>", vim.cmd.qa) -- quit all
@@ -29,6 +39,10 @@ vim.keymap.set("n", "ÑÑ", "gg<S-v>G")
 -- select paragraph
 vim.keymap.set("n", "ññ", "vip$")
 
+-- move selected text
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+
 -- remap split nav
 vim.keymap.set("n", "<C-h>", "<cmd>wincmd h<CR>")
 vim.keymap.set("n", "<C-l>", "<cmd>wincmd l<CR>")
@@ -39,5 +53,8 @@ vim.keymap.set("n", "<C-j>", "<cmd>wincmd j<CR>")
 vim.keymap.set("n", "ss", vim.cmd.vsplit) -- vertical split
 vim.keymap.set("n", "SS", vim.cmd.split)  -- horizontal split
 
--- disable highlight
+-- disable search highlight
 vim.keymap.set("n", "++", "<cmd>nohl<CR>")
+
+-- more convenient search & replace
+vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
