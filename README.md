@@ -1,12 +1,11 @@
 ![mariogt nvim setup](/media/gtnvim.png "nvim")
 
-
 ## Overview
 
 My Neovim config files, inspired by the ThePrimagean 🍻
 video here: <https://www.youtube.com/watch?v=w7i4amO_zaE&t=1s>
 
-This is my first successful attemp to generate a usable Neovim setup for my 
+This is my first successful attemp to generate a usable Neovim setup for my
 programming needs. Trying to reconfigure my emacs brain 🦬 the struggle is real!
 
 Beware that I'm a Neovim padawan, all lua files were checked by the LSP server but
@@ -14,7 +13,7 @@ still can exist some errors, use them with caution!
 
 ## Details
 
-### Plugins 
+### Plugins
 
 - <https://github.com/wbthomason/packer.nvim>
 - <https://github.com/nvim-telescope/telescope.nvim>
