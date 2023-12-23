@@ -18,9 +18,9 @@ return require('packer').startup(function(use)
         'ellisonleao/gruvbox.nvim',
         as = 'gruvbox'
     }
-
     use("savq/melange-nvim")
     use('craftzdog/solarized-osaka.nvim')
+    use('itchyny/lightline.vim')
 
     -- mix
     use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
@@ -29,7 +29,7 @@ return require('packer').startup(function(use)
     use('mbbill/undotree')
     use('tpope/vim-fugitive')
 
-    -- comment
+    -- comment/uncomment code
     use {
         'numToStr/Comment.nvim',
         config = function()

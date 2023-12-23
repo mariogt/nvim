@@ -24,3 +24,6 @@ vim.opt.showcmd = true
 vim.opt.autoread = true
 vim.opt.background = 'dark'
 vim.cmd.colorscheme('solarized-osaka')
+vim.g.lightline = {
+    colorscheme = 'solarized'
+}

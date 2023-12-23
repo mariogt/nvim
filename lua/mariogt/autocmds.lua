@@ -12,3 +12,9 @@ vim.api.nvim_create_autocmd({ "BufWritePost" }, {
     end,
     group = autocmd_group,
 })
+
+-- Turn off paste mode when leaving insert
+vim.api.nvim_create_autocmd("InsertLeave", {
+    pattern = "*",
+    command = "set nopaste",
+})
