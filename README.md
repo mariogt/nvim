@@ -18,6 +18,7 @@ My Neovim config files, inspired by:
 This is my first successful attemp to generate a usable Neovim setup for my
 programming needs. Trying to reconfigure my emacs brain 🦬 the struggle is real!
 <br>
+<br>
 Beware that I'm a Neovim padawan, all lua files were checked by the LSP server but
 still can exist some errors, use them with caution!
 
