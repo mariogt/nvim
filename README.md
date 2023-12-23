@@ -2,9 +2,19 @@
 
 ## Overview
 
-My Neovim config files, inspired by the ThePrimagean 🍻
-video here: <https://www.youtube.com/watch?v=w7i4amO_zaE&t=1s>
+My Neovim config files, inspired by:
 
+**ThePrimagean** 🍻
+
+- video : <https://www.youtube.com/watch?v=w7i4amO_zaE&t=1s>
+- github: <https://github.com/ThePrimeagen/init.lua>
+
+**Devaslife** (craftzdog) 🐶
+
+- video : <https://www.youtube.com/watch?v=fFHlfbKVi30&t=3190s>
+- github: <https://github.com/craftzdog/dotfiles-public/tree/master>
+
+<br>
 This is my first successful attemp to generate a usable Neovim setup for my
 programming needs. Trying to reconfigure my emacs brain 🦬 the struggle is real!
 
