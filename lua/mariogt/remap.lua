@@ -39,6 +39,9 @@ vim.keymap.set("n", "ÑÑ", "gg<S-v>G")
 -- select paragraph
 vim.keymap.set("n", "ññ", "vip$")
 
+-- select line
+vim.keymap.set("n", "ñññ", "0v$")
+
 -- move selected text
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
