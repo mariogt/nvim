@@ -21,10 +21,7 @@ This is my first successful attemp to generate a usable Neovim setup for my prog
 
 ### Plugins
 
-```
 - <https://github.com/folke/lazy.nvim>
-```
-
 - <https://github.com/nvim-telescope/telescope.nvim>
 - <https://github.com/nvim-treesitter/nvim-treesitter>
 - <https://github.com/nvim-treesitter/playground>
