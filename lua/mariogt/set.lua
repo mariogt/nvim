@@ -27,3 +27,6 @@ vim.cmd.colorscheme('solarized-osaka')
 vim.g.lightline = {
     colorscheme = 'solarized'
 }
+
+-- WSL2/Win shared clipboard
+vim.o.clipboard = "unnamedplus"

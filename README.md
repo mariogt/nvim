@@ -14,18 +14,19 @@ My Neovim config files, inspired by:
 - Video : <https://www.youtube.com/watch?v=fFHlfbKVi30&t=3190s>
 - Github: <https://github.com/craftzdog/dotfiles-public/tree/master>
 
-<br>
-This is my first successful attemp to generate a usable Neovim setup for my programming needs. Trying to reconfigure my emacs brain 🦬 the struggle is real! Beware that I'm a Neovim padawan, all lua files were checked by the LSP server but still can exist some errors, use them with caution!
-
 ## Details
+
+This is my first successful attemp to generate a usable Neovim setup for my programming needs, trying to reconfigure my emacs brain 🦬 the struggle is real!
+
+Some context, right now I'm living in a Windows world, Win 11 + WSL2 on my laptop, Win 10 + Fedora 39 VM on my PC mega tower. In this setup NeoVim blends perfectly, works fast on my laptop, my Linux VM, and over SSH, an super fast and low latency experience!
 
 ### Plugins
 
 - <https://github.com/folke/lazy.nvim>
 - <https://github.com/nvim-telescope/telescope.nvim>
+- <https://github.com/ThePrimeagen/harpoon/tree/harpoon2>
 - <https://github.com/nvim-treesitter/nvim-treesitter>
 - <https://github.com/nvim-treesitter/playground>
-- <https://github.com/theprimeagen/harpoon>
 - <https://github.com/mbbill/undotree>
 - <https://github.com/tpope/vim-fugitive>
 - <https://github.com/numToStr/Comment.nvim>
