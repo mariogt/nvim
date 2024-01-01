@@ -15,8 +15,6 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
 
-    { 'nvim-lua/plenary.nvim' },
-
     -- telescope
     {
         'nvim-telescope/telescope.nvim',
@@ -34,7 +32,12 @@ require("lazy").setup({
     -- mix
     { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
     { 'nvim-treesitter/playground' },
-    { 'theprimeagen/harpoon' },
+    { "nvim-lua/plenary.nvim" },
+    {
+        "ThePrimeagen/harpoon",
+        branch = "harpoon2",
+        requires = { { "nvim-lua/plenary.nvim" } }
+    },
     { 'mbbill/undotree' },
     { 'tpope/vim-fugitive' },
 
