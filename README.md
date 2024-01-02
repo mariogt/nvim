@@ -37,3 +37,11 @@ Some context, right now I'm living in a Windows world, Win 11 + WSL2 on my lapto
 - <https://github.com/ellisonleao/gruvbox.nvim>
 - <https://github.com/craftzdog/solarized-osaka.nvim>
 - <https://github.com/savq/melange-nvim>
+
+### Statusline
+
+- <https://github.com/nvim-lualine/lualine.nvim>
+
+### Patched fonts
+
+- <https://github.com/ryanoasis/nerd-fonts/releases>
