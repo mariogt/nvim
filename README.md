@@ -48,6 +48,7 @@ The only drawback is that you will not be able to call windows apps from the WSL
 - <https://github.com/ellisonleao/gruvbox.nvim>
 - <https://github.com/craftzdog/solarized-osaka.nvim>
 - <https://github.com/savq/melange-nvim>
+- <https://github.com/rebelot/kanagawa.nvim>
 
 ### Statusline
 

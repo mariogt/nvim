@@ -25,8 +25,9 @@ require("lazy").setup({
   {
     'ellisonleao/gruvbox.nvim',
   },
-  { "savq/melange-nvim" },
+  { 'savq/melange-nvim' },
   { 'craftzdog/solarized-osaka.nvim' },
+  { 'rebelot/kanagawa.nvim' },
 
   -- status line
   {
