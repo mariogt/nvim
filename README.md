@@ -20,7 +20,18 @@ This is my first successful attemp to generate a usable Neovim setup for my prog
 
 Some context, right now I'm living in a Windows world, Win 11 + WSL2 on my laptop, Win 10 + Fedora 39 VM on my PC mega tower. In this setup NeoVim blends perfectly, works fast on my laptop, my Linux VM, and over SSH, super fast and low latency experience!
 
-### Plugins
+### WSL2 tips
+
+Drastically improve your linux and NeoVim speed, putting this lines into /etc/wsl.conf
+
+```
+[interop]
+appendWindowsPath = false
+```
+
+The only drawback is that you will not be able to call windows apps from the WSL2 distro, but the speed gains greatly compensate this issue.
+
+## Plugins
 
 - <https://github.com/folke/lazy.nvim>
 - <https://github.com/nvim-telescope/telescope.nvim>
