@@ -41,7 +41,6 @@ The only drawback is that you will not be able to call windows apps from WSL2, b
 - <https://github.com/mbbill/undotree>
 - <https://github.com/tpope/vim-fugitive>
 - <https://github.com/numToStr/Comment.nvim>
-- <https://github.com/VonHeikemen/lsp-zero.nvim>
 
 ### Themes
 
