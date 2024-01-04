@@ -22,14 +22,14 @@ Some context, right now I'm living in a Windows world, Win 11 + WSL2 on my lapto
 
 ### WSL2 tips
 
-Drastically improve your linux and NeoVim speed, putting this lines into /etc/wsl.conf
+Drastically improve your linux and NeoVim speed putting these lines into /etc/wsl.conf
 
 ```
 [interop]
 appendWindowsPath = false
 ```
 
-The only drawback is that you will not be able to call windows apps from the WSL2 distro, but the speed gains greatly compensate this issue.
+The only drawback is that you will not be able to call windows apps from WSL2, but the speed gains greatly compensate this issue.
 
 ## Plugins
 
