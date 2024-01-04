@@ -19,12 +19,11 @@ require("lazy").setup({
   {
     'nvim-telescope/telescope.nvim',
     tag = '0.1.5',
+    dependencies = { 'nvim-lua/plenary.nvim' },
   },
 
   -- themes
-  {
-    'ellisonleao/gruvbox.nvim',
-  },
+  { 'ellisonleao/gruvbox.nvim' },
   { 'savq/melange-nvim' },
   { 'craftzdog/solarized-osaka.nvim' },
   { 'rebelot/kanagawa.nvim' },
