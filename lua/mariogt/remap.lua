@@ -3,6 +3,7 @@ vim.g.mapleader = " "
 
 -- alternative ESC (remember <C-[> == Esc)
 vim.keymap.set("i", "<A-f>", "<esc>")
+vim.keymap.set("v", "<A-f>", "<esc>")
 
 -- file explorer
 vim.keymap.set("n", "<leader>¿", vim.cmd.Ex)
