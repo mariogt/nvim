@@ -3,6 +3,13 @@ local lspconfig = require('lspconfig')
 
 lspconfig.clangd.setup {}
 lspconfig.gopls.setup {}
+lspconfig.cssls.setup {}
+lspconfig.jsonls.setup {}
+lspconfig.bashls.setup {}
+lspconfig.marksman.setup {}
+lspconfig.pylsp.setup {}
+lspconfig.tsserver.setup {}
+lspconfig.zls.setup {}
 
 lspconfig.html.setup {
   settings = {
@@ -13,11 +20,6 @@ lspconfig.html.setup {
     }
   }
 }
-
-lspconfig.cssls.setup {}
-lspconfig.jsonls.setup {}
-lspconfig.bashls.setup {}
-lspconfig.marksman.setup {}
 
 lspconfig.lua_ls.setup {
   settings = {
@@ -30,8 +32,6 @@ lspconfig.lua_ls.setup {
   },
 }
 
-lspconfig.tsserver.setup {}
-lspconfig.zls.setup {}
 lspconfig.rust_analyzer.setup {
   -- Server-specific settings. See `:help lspconfig-setup`
   settings = {

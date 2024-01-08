@@ -12,6 +12,7 @@ require("mason-lspconfig").setup {
     "lua_ls",
     "marksman",
     "tsserver",
-    "zls"
+    "zls",
+    "pylsp"
   }
 }
