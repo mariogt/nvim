@@ -67,7 +67,7 @@ The only drawback is that you will not be able to call windows apps from WSL2, b
 - <https://github.com/hrsh7th/cmp-nvim-lsp>
 - <https://github.com/hrsh7th/nvim-cmp>
 
-### snippets (I'm still searching for a good Yasnippet replacement)
+### Snippets (I'm still searching for a good Yasnippet replacement)
 
 - <https://github.com/L3MON4D3/LuaSnip>
 
