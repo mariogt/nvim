@@ -22,14 +22,15 @@ Some context, right now I'm living in a Windows world, Win 11 + WSL2 on my lapto
 
 ### WSL2 tips
 
-Drastically improve your linux and NeoVim speed putting these lines into /etc/wsl.conf
+Drastically improve your linux and NeoVim speed on Windows 11 putting these lines into /etc/wsl.conf
 
 ```
 [interop]
 appendWindowsPath = false
 ```
 
-The only drawback is that you will not be able to call windows apps from WSL2, but the speed gains greatly compensate this issue.
+The only drawback is that you will not be able to call windows apps from WSL2, but the speed gains compensate this issue.
+Strangely WSL2 on my Windows 10 tower works fine and speedy without this hack, but my Windows 11 laptop have to had this setting on to eliminate any lag on WSL2.
 
 ## Plugins
 
