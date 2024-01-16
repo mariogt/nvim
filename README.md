@@ -30,7 +30,7 @@ appendWindowsPath = false
 ```
 
 The only drawback is that you will not be able to call windows apps from WSL2, but the speed gains compensate this issue.
-Strangely WSL2 on my Windows 10 tower works fine and speedy without this hack, but my Windows 11 laptop have to had this setting on to eliminate any lag on WSL2.
+Strangely WSL2 on my Windows 10 tower works okayish without this hack, but my Windows 11 laptop have to had this setting on, period.
 
 ## Plugins
 
