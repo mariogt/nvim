@@ -26,3 +26,6 @@ vim.cmd.colorscheme('solarized-osaka')
 
 -- WSL2/Win shared clipboard
 vim.o.clipboard = "unnamedplus"
+
+-- disable mouse
+vim.opt.mouse = ""
