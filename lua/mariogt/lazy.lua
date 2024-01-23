@@ -63,6 +63,10 @@ require("lazy").setup({
   { 'L3MON4D3/LuaSnip' },
 
   -- tabby ml
-  { 'TabbyML/vim-tabby' }
+  { 'TabbyML/vim-tabby' },
+
+  -- vim-tmux-navigator
+  { 'christoomey/vim-tmux-navigator' },
+  lazy = true,
 
 })
