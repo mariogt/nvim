@@ -13,6 +13,7 @@ require("mason-lspconfig").setup {
     "marksman",
     "tsserver",
     "zls",
-    "pylsp"
+    "pylsp",
+    "ruby_ls",
   }
 }

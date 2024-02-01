@@ -10,6 +10,7 @@ lspconfig.marksman.setup {}
 lspconfig.pylsp.setup {}
 lspconfig.tsserver.setup {}
 lspconfig.zls.setup {}
+lspconfig.rubyls.setup {}
 
 lspconfig.html.setup {
   settings = {
