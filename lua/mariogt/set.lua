@@ -21,8 +21,12 @@ vim.opt.updatetime = 50
 vim.opt.showmode = true
 vim.opt.showcmd = true
 vim.opt.autoread = true
+
 vim.opt.background = 'dark'
-vim.cmd.colorscheme('solarized-osaka')
+vim.cmd.colorscheme('rose-pine-dawn')
+-- rose-pine-main
+-- rose-pine-moon
+-- rose-pine-dawn
 
 -- WSL2/Win shared clipboard
 vim.o.clipboard = "unnamedplus"

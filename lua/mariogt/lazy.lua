@@ -27,7 +27,7 @@ require("lazy").setup({
   { 'savq/melange-nvim' },
   { 'craftzdog/solarized-osaka.nvim' },
   { 'rebelot/kanagawa.nvim' },
-
+  { "rose-pine/neovim",              name = "rose-pine" },
   -- status line
   {
     'nvim-lualine/lualine.nvim',
