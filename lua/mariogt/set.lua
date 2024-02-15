@@ -23,7 +23,7 @@ vim.opt.showcmd = true
 vim.opt.autoread = true
 
 vim.opt.background = 'dark'
-vim.cmd.colorscheme('rose-pine-dawn')
+vim.cmd.colorscheme('solarized-osaka')
 -- rose-pine-main
 -- rose-pine-moon
 -- rose-pine-dawn
