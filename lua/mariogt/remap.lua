@@ -60,6 +60,12 @@ vim.keymap.set("n", "<C-j>", "<cmd>wincmd j<CR>")
 vim.keymap.set("n", "ss", vim.cmd.vsplit) -- vertical split
 vim.keymap.set("n", "SS", vim.cmd.split)  -- horizontal split
 
+-- split window resize
+vim.keymap.set("n", "<C-Up>", "<cmd>resize +2<CR>")
+vim.keymap.set("n", "<C-Down>", "<cmd>resize -2<CR>")
+vim.keymap.set("n", "<C-Left>", "<cmd>vertical resize -2<CR>")
+vim.keymap.set("n", "<C-Right>", "<cmd>vertical resize +2<CR>")
+
 -- disable search highlight
 vim.keymap.set("n", "++", "<cmd>nohl<CR>")
 
