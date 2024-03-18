@@ -28,14 +28,15 @@ require("lazy").setup({
   { 'craftzdog/solarized-osaka.nvim' },
   { 'rebelot/kanagawa.nvim' },
   { "rose-pine/neovim",              name = "rose-pine" },
-  {
-    "mariogt/cobalt2gt.nvim",
-    event = { "ColorSchemePre" }, -- if you want to lazy load
-    dependencies = { "tjdevries/colorbuddy.nvim" },
-    init = function()
-      require("colorbuddy").colorscheme("cobalt2")
-    end,
-  },
+
+  -- {
+  --   "mariogt/cobalt2gt.nvim",
+  --   event = { "ColorSchemePre" }, -- if you want to lazy load
+  --   dependencies = { "tjdevries/colorbuddy.nvim" },
+  --   init = function()
+  --     require("colorbuddy").colorscheme("cobalt2")
+  --   end,
+  -- },
 
   -- status line
   {
