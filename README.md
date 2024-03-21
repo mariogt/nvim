@@ -18,7 +18,7 @@ My Neovim config files, inspired by:
 
 This is my first successful attemp to generate a usable Neovim setup for my programming needs, trying to reconfigure my emacs brain 🦬 the struggle is real!
 
-Some context, right now I'm living in a Windows world, Win 11 + WSL2 on my laptop, Win 10 + Fedora 39 VM on my PC mega tower. In this setup NeoVim blends perfectly, works fast on my laptop, my Linux VM, and over SSH, super fast and low latency experience!
+Some context, right now I'm living in a Mac/PC world, Win 11 + WSL2 on my PC Mega Tower, macOS (obviously) on my MacBook Pro M3 Max. In this setup NeoVim blends perfectly, works fast on my laptop, my PC, and over SSH, super fast and low latency experience!
 
 ### WSL2 tips
 
@@ -79,6 +79,7 @@ Strangely WSL2 on my Windows 10 tower works okayish without this hack, but my Wi
 - <https://github.com/savq/melange-nvim>
 - <https://github.com/rebelot/kanagawa.nvim>
 - <https://github.com/rose-pine/neovim>
+- <https://ellisonleao/gruvbox.nvim%22>
 
 ### Statusline
 

@@ -1,4 +1,4 @@
--- vim.opt.guicursor = ""
+vim.opt.guicursor = "n-v-i-c:block-Cursor"
 vim.opt.nu = true
 vim.opt.relativenumber = true
 vim.opt.tabstop = 2
@@ -17,18 +17,18 @@ vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
--- vim.opt.colorcolumn = "80"
+vim.opt.colorcolumn = "80"
 vim.opt.showmode = true
 vim.opt.showcmd = true
 vim.opt.autoread = true
 
 vim.opt.background = 'dark'
-vim.cmd.colorscheme('solarized-osaka')
+vim.cmd.colorscheme('gruvbox')
 -- rose-pine-main
 -- rose-pine-moon
 -- rose-pine-dawn
 
--- WSL2/Win shared clipboard
+-- shared clipboard
 vim.o.clipboard = "unnamedplus"
 
 -- disable mouse
