@@ -3,6 +3,7 @@
 -- auto-command repeatedly every time a file is resourced
 local autocmd_group = vim.api.nvim_create_augroup("Custom auto-commands", { clear = true })
 
+-- Format MD files after saving
 vim.api.nvim_create_autocmd({ "BufWritePost" }, {
   pattern = { "*.md", "*.MD" },
   desc = "Auto-format MD files after saving",
