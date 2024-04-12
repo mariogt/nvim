@@ -72,11 +72,11 @@ vim.keymap.set("n", "++", "<cmd>nohl<CR>")
 -- more convenient search & replace
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
---tmux integration
+--tmux vim like shortcuts integration
 vim.keymap.set("n", "<C-h>", "<cmd> TmuxNavigateLeft<CR>")
 vim.keymap.set("n", "<C-l>", "<cmd> TmuxNavigateRight<CR>")
-vim.keymap.set("n", "<C-j>", "<cmd> TmuxNavigateDown<CR>")
-vim.keymap.set("n", "<C-k>", "<cmd> TmuxNavigateUp<CR>")
+vim.keymap.set("n", "<C-k>", "<cmd> TmuxNavigateDown<CR>")
+vim.keymap.set("n", "<C-j>", "<cmd> TmuxNavigateUp<CR>")
 
 local harpoon = require("harpoon")
 
