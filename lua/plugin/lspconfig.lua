@@ -10,7 +10,7 @@ lspconfig.marksman.setup {}
 lspconfig.pylsp.setup {}
 lspconfig.tsserver.setup {}
 lspconfig.zls.setup {}
-lspconfig.ruby_ls.setup {}
+lspconfig.ruby_lsp.setup {}
 
 lspconfig.html.setup {
   settings = {
