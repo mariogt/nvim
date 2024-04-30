@@ -71,4 +71,18 @@ require("lazy").setup({
   { 'christoomey/vim-tmux-navigator' },
   lazy = true,
 
+  -- autopair
+  {
+    'windwp/nvim-autopairs',
+    event = "InsertEnter",
+    config = true
+    -- use opts = {} for passing setup options
+    -- this is equalent to setup({}) function
+  },
+
+  -- git signs
+  {
+    'lewis6991/gitsigns.nvim',
+  }
+
 })

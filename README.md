@@ -55,6 +55,7 @@ Strangely WSL2 on my Windows 10 tower works okayish without this hack, but my Wi
 ### Git
 
 - <https://github.com/tpope/vim-fugitive>
+- <https://github.com/lewis6991/gitsigns.nvim>
 
 ### Comment/uncomment
 
@@ -93,3 +94,7 @@ Strangely WSL2 on my Windows 10 tower works okayish without this hack, but my Wi
 ## Patched fonts
 
 - <https://github.com/ryanoasis/nerd-fonts/releases>
+
+## Mix
+
+- <https://github.com/windwp/nvim-autopairs>
