@@ -43,10 +43,11 @@ Strangely WSL2 on my Windows 10 tower works okayish without this hack, but my Wi
 - <https://github.com/nvim-telescope/telescope.nvim>
 - <https://github.com/ThePrimeagen/harpoon/tree/harpoon2>
 
-### Code parser/highlighting
+### Code parser/formatting/highlighting
 
 - <https://github.com/nvim-treesitter/nvim-treesitter>
 - <https://github.com/nvim-treesitter/playground>
+- <https://github.com/windwp/nvim-autopairs>
 
 ### Undo management
 
@@ -94,7 +95,3 @@ Strangely WSL2 on my Windows 10 tower works okayish without this hack, but my Wi
 ## Patched fonts
 
 - <https://github.com/ryanoasis/nerd-fonts/releases>
-
-## Mix
-
-- <https://github.com/windwp/nvim-autopairs>
