@@ -26,7 +26,7 @@ vim.opt.smartcase = true
 vim.opt.cursorline = true
 
 vim.opt.background = 'dark'
-vim.cmd.colorscheme('gruvbox')
+vim.cmd.colorscheme('cobalt2')
 -- rose-pine-main
 -- rose-pine-moon
 -- rose-pine-dawn
