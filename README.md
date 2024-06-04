@@ -62,16 +62,21 @@ Strangely WSL2 on my Windows 10 tower works okayish without this hack, but my Wi
 
 - <https://github.com/numToStr/Comment.nvim>
 
-### Lsp related
+### Lsp
 
 - <https://github.com/williamboman/mason.nvim>
 - <https://github.com/williamboman/mason-lspconfig.nvim>
 - <https://github.com/neovim/nvim-lspconfig>
 - <https://github.com/hrsh7th/cmp-nvim-lsp>
+
+### Autocompletion & snippets
+
 - <https://github.com/hrsh7th/nvim-cmp>
-
-### Snippets (I'm still searching for a good Yasnippet replacement)
-
+- <https://github.com/hrsh7th/cmp-buffer>
+- <https://github.com/hrsh7th/cmp-path>
+- <https://github.com/rafamadriz/friendly-snippets>
+- <https://github.com/saadparwaiz1/cmp_luasnip>
+- <https://github.com/onsails/lspkind.nvim>
 - <https://github.com/L3MON4D3/LuaSnip>
 
 ### Themes
