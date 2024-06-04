@@ -33,15 +33,15 @@ cmp.setup({
       ["<C-u>"] = cmp.mapping.scroll_docs(-4),
       ["<C-d>"] = cmp.mapping.scroll_docs(4),
       ["<C-Space>"] = cmp.mapping.complete(), -- show completion suggestions
-      ["<C-e>"] = cmp.mapping.abort(), -- close completion window
+      ["<C-e>"] = cmp.mapping.abort(),        -- close completion window
       ["<CR>"] = cmp.mapping.confirm({ select = false }),
     }),
     -- sources for autocompletion
     sources = cmp.config.sources({
       { name = "nvim_lsp" },
       { name = "luasnip" }, -- snippets
-      { name = "buffer" }, -- text within current buffer
-      { name = "path" }, -- file system paths
+      { name = "buffer" },  -- text within current buffer
+      { name = "path" },    -- file system paths
     }),
     -- configure lspkind for vs-code like pictograms in completion menu
     formatting = {

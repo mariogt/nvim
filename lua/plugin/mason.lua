@@ -14,6 +14,5 @@ require("mason-lspconfig").setup {
     "tsserver",
     "zls",
     "pylsp",
-    --"ruby_ls",
   }
 }
