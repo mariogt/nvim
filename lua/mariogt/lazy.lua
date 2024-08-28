@@ -71,13 +71,13 @@ require("lazy").setup({
   { 'hrsh7th/cmp-nvim-lsp' },
 
   -- autocompletion & snippets
-  { 'hrsh7th/nvim-cmp' },            -- autocompletion engine
-  { 'hrsh7th/cmp-buffer' },          -- source for text in buffer
-  { 'hrsh7th/cmp-path' },            -- source for file system paths in commands
+  { 'hrsh7th/nvim-cmp' },             -- autocompletion engine
+  { 'hrsh7th/cmp-buffer' },           -- source for text in buffer
+  { 'hrsh7th/cmp-path' },             -- source for file system paths in commands
   { 'rafamadriz/friendly-snippets' }, -- useful snippet library
-  { 'saadparwaiz1/cmp_luasnip' },    -- for lua autocompletion
-  { 'onsails/lspkind.nvim' },        -- vs-code like pictograms
-  { 'L3MON4D3/LuaSnip' },            -- snippet engine
+  { 'saadparwaiz1/cmp_luasnip' },     -- for lua autocompletion
+  { 'onsails/lspkind.nvim' },         -- vs-code like pictograms
+  { 'L3MON4D3/LuaSnip' },             -- snippet engine
 
   -- tabby ml
   { 'TabbyML/vim-tabby' },
