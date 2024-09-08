@@ -11,7 +11,7 @@ require("mason-lspconfig").setup {
     "jsonls",
     "lua_ls",
     "marksman",
-    "tsserver",
+    "ts_ls",
     "zls",
     "pylsp",
   }

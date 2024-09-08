@@ -8,7 +8,7 @@ lspconfig.jsonls.setup {}
 lspconfig.bashls.setup {}
 lspconfig.marksman.setup {}
 lspconfig.pylsp.setup {}
-lspconfig.tsserver.setup {}
+lspconfig.ts_ls.setup {}
 lspconfig.zls.setup {}
 lspconfig.ruby_lsp.setup {}
 
