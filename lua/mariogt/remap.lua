@@ -25,17 +25,19 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
--- copy all
-vim.keymap.set("n", "<F5>", "<cmd>%y+<CR>")
+-- saving buffers 
+vim.keymap.set("n", "<F5>", vim.cmd.w)  -- save
+vim.keymap.set("n", "<F6>", vim.cmd.wa) -- save all
 
 -- copy to vim/system clipboard
 vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]]) -- vim clipboard
 vim.keymap.set("n", "<leader>Y", [["+Y]])          -- system clipboard
 
--- quit & saving
-vim.keymap.set("n", "<F6>", vim.cmd.qa) -- quit all
-vim.keymap.set("n", "<F7>", vim.cmd.w)  -- save
-vim.keymap.set("n", "<F8>", vim.cmd.wa) -- save all
+-- copy all 
+vim.keymap.set("n", "<F7>", "<cmd>%y+<CR>")
+
+-- exit vim
+vim.keymap.set("n", "<F8>", vim.cmd.qa) -- quit all
 
 -- select all
 vim.keymap.set("n", "ÑÑ", "gg<S-v>G")
