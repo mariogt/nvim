@@ -23,7 +23,7 @@ vim.opt.autoread = true
 vim.opt.hlsearch = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
-vim.opt.cursorline = true
+vim.opt.cursorline = false
 
 vim.opt.background = 'dark'
 vim.cmd.colorscheme('gruvbox')
