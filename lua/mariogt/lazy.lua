@@ -28,7 +28,7 @@ require("lazy").setup({
   { 'craftzdog/solarized-osaka.nvim' },
   { 'rebelot/kanagawa.nvim' },
   { "rose-pine/neovim",              name = "rose-pine" },
-  { "ellisonleao/gruvbox.nvim",      priority = 1000,   config = true, opts = ... },
+  { "mariogt/gruvbox.nvim",      priority = 1000,   config = true, opts = ... },
   {
     "mariogt/cobalt2.nvim",
     event = { "ColorSchemePre" }, -- if you want to lazy load

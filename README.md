@@ -86,7 +86,7 @@ Strangely WSL2 on my Windows 10 tower works okayish without this hack, but my Wi
 - <https://github.com/savq/melange-nvim>
 - <https://github.com/rebelot/kanagawa.nvim>
 - <https://github.com/rose-pine/neovim>
-- <https://ellisonleao/gruvbox.nvim>
+- <https://github.com/mariogt/gruvbox.nvim>
 - <https://github.com/mariogt/cobalt2.nvim>
 
 ### Statusline
