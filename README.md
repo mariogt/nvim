@@ -58,10 +58,6 @@ Strangely WSL2 on my Windows 10 tower works okayish without this hack, but my Wi
 - <https://github.com/tpope/vim-fugitive>
 - <https://github.com/lewis6991/gitsigns.nvim>
 
-### Comment/uncomment
-
-- <https://github.com/numToStr/Comment.nvim>
-
 ### Lsp
 
 - <https://github.com/williamboman/mason.nvim>

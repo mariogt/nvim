@@ -56,14 +56,6 @@ require("lazy").setup({
   { 'mbbill/undotree' },
   { 'tpope/vim-fugitive' },
 
-  -- comment/uncomment code
-  {
-    'numToStr/Comment.nvim',
-    config = function()
-      require('Comment').setup()
-    end
-  },
-
   -- lsp
   { 'williamboman/mason.nvim' },
   { 'williamboman/mason-lspconfig.nvim' },
