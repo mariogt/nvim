@@ -44,6 +44,11 @@ require("lazy").setup({
     dependencies = { 'nvim-tree/nvim-web-devicons' }
   },
 
+  -- hex colorizer
+  {
+    "norcalli/nvim-colorizer.lua"
+  },
+
   -- mix
   { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
   { 'nvim-treesitter/playground' },
