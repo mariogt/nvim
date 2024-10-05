@@ -45,9 +45,7 @@ require("lazy").setup({
   },
 
   -- hex colorizer
-  {
-    "norcalli/nvim-colorizer.lua"
-  },
+  { "norcalli/nvim-colorizer.lua" },
 
   -- mix
   { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
@@ -60,6 +58,9 @@ require("lazy").setup({
   },
   { 'mbbill/undotree' },
   { 'tpope/vim-fugitive' },
+
+  -- floaterm
+  { 'voldikss/vim-floaterm' },
 
   -- lsp
   { 'williamboman/mason.nvim' },

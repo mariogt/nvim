@@ -30,14 +30,20 @@ vim.keymap.set("n", "<F5>", vim.cmd.w)  -- save
 vim.keymap.set("n", "<F6>", vim.cmd.wa) -- save all
 
 -- copy to vim/system clipboard
-vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]]) -- vim clipboard
+vim.keymap.set({ "n", "v" }, "leader>y", [["+y]]) -- vim clipboard
 vim.keymap.set("n", "<leader>Y", [["+Y]])          -- system clipboard
 
+-- set read only
+vim.keymap.set("n", "<F7>", ":set readonly!<CR>")
+
 -- copy all 
-vim.keymap.set("n", "<F7>", "<cmd>%y+<CR>")
+vim.keymap.set("n", "<F8>", "<cmd>%y+<CR>")
+
+-- floaterm
+vim.keymap.set("n", "<F9>", ":FloatermNew --height=0.9 --width=0.9 --wintype=float --tittle=doom --autoclose=1<CR>")
 
 -- exit vim
-vim.keymap.set("n", "<F8>", vim.cmd.qa) -- quit all
+vim.keymap.set("n", "<F10>", vim.cmd.qa) -- quit all
 
 -- select all
 vim.keymap.set("n", "ÑÑ", "gg<S-v>G")

@@ -93,6 +93,10 @@ Strangely WSL2 on my Windows 10 tower works okayish without this hack, but my Wi
 
 - <https://github.com/norcalli/nvim-colorizer.lua>
 
+### Floating Terminal
+
+- <https://github.com/voldikss/vim-floaterm>
+
 ## Self-hosted AI coding assistant
 
 - <https://github.com/TabbyML/tabby>
