@@ -37,12 +37,16 @@ vim.keymap.set("n", "<leader>Y", [["+Y]])          -- system clipboard
 vim.keymap.set("n", "<F7>", ":set readonly!<CR>")
 
 -- copy all 
-vim.keymap.set("n", "<F8>", "<cmd>%y+<CR>")
+-- vim.keymap.set("n", "<F8>", "<cmd>%y+<CR>")
 
--- floaterm
-vim.keymap.set("n", "<F9>", ":FloatermNew --height=0.9 --width=0.9 --wintype=float --tittle=doom --autoclose=1<CR>")
 -- exit to normal mode from terminal insert mode 
 vim.keymap.set("t", "<esc>", "<C-\\><C-n>")
+
+-- new floaterm
+vim.keymap.set("n", "<F9>", ":FloatermNew --height=0.9 --width=0.9 --wintype=float --tittle=doom --autoclose=1<CR>")
+-- floaterm toggle
+vim.keymap.set("n", "<F8>", ":FloatermToggle<CR>")
+vim.keymap.set("t", "<F8>", "<C-\\><C-n>:FloatermToggle<CR>")
 
 -- exit vim
 vim.keymap.set("n", "<F10>", vim.cmd.qa) -- quit all
