@@ -41,6 +41,8 @@ vim.keymap.set("n", "<F8>", "<cmd>%y+<CR>")
 
 -- floaterm
 vim.keymap.set("n", "<F9>", ":FloatermNew --height=0.9 --width=0.9 --wintype=float --tittle=doom --autoclose=1<CR>")
+-- exit to normal mode from terminal insert mode 
+vim.keymap.set("t", "<esc>", "<C-\\><C-n>")
 
 -- exit vim
 vim.keymap.set("n", "<F10>", vim.cmd.qa) -- quit all
