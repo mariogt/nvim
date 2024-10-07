@@ -25,21 +25,21 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
--- saving buffers 
+-- saving buffers
 vim.keymap.set("n", "<F5>", vim.cmd.w)  -- save
 vim.keymap.set("n", "<F6>", vim.cmd.wa) -- save all
 
 -- copy to vim/system clipboard
 vim.keymap.set({ "n", "v" }, "leader>y", [["+y]]) -- vim clipboard
-vim.keymap.set("n", "<leader>Y", [["+Y]])          -- system clipboard
+vim.keymap.set("n", "<leader>Y", [["+Y]])         -- system clipboard
 
 -- set read only
 vim.keymap.set("n", "<F7>", ":set readonly!<CR>")
 
--- copy all 
+-- copy all
 -- vim.keymap.set("n", "<F8>", "<cmd>%y+<CR>")
 
--- exit to normal mode from terminal insert mode 
+-- exit to normal mode from terminal insert mode
 vim.keymap.set("t", "<esc>", "<C-\\><C-n>")
 
 -- new floaterm
