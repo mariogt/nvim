@@ -30,7 +30,7 @@ appendWindowsPath = false
 ```
 
 The only drawback is that you will not be able to call windows apps from WSL2, but the speed gains compensate this issue.
-Strangely WSL2 on my Windows 10 tower works okayish without this hack, but my Windows 11 laptop have to had this setting on, period.
+Strangely WSL2 on Windows 10 works okayish without this hack, but on Windows 11 I have to had this setting on, period.
 
 ## Plugins
 
@@ -73,7 +73,12 @@ Strangely WSL2 on my Windows 10 tower works okayish without this hack, but my Wi
 - <https://github.com/rafamadriz/friendly-snippets>
 - <https://github.com/saadparwaiz1/cmp_luasnip>
 - <https://github.com/onsails/lspkind.nvim>
+
+### Snippets
+
 - <https://github.com/L3MON4D3/LuaSnip>
+- <https://github.com/SirVer/ultisnips>
+- <https://github.com/honza/vim-snippets>
 
 ### Themes
 
