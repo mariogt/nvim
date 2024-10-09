@@ -68,14 +68,19 @@ require("lazy").setup({
   { 'neovim/nvim-lspconfig' },
   { 'hrsh7th/cmp-nvim-lsp' },
 
-  -- autocompletion & snippets
+  -- autocompletion 
   { 'hrsh7th/nvim-cmp' },             -- autocompletion engine
   { 'hrsh7th/cmp-buffer' },           -- source for text in buffer
   { 'hrsh7th/cmp-path' },             -- source for file system paths in commands
   { 'rafamadriz/friendly-snippets' }, -- useful snippet library
   { 'saadparwaiz1/cmp_luasnip' },     -- for lua autocompletion
   { 'onsails/lspkind.nvim' },         -- vs-code like pictograms
-  { 'L3MON4D3/LuaSnip' },             -- snippet engine
+
+  -- snippets engines
+  { 'L3MON4D3/LuaSnip' },
+  { 'SirVer/ultisnips' },
+  -- snippets colection
+  { 'honza/vim-snippets' },
 
   -- tabby ml
   { 'TabbyML/vim-tabby' },
@@ -96,6 +101,5 @@ require("lazy").setup({
   -- git signs
   {
     'lewis6991/gitsigns.nvim',
-  }
-
+  },
 })
