@@ -22,6 +22,9 @@ require("lazy").setup({
     dependencies = { 'nvim-lua/plenary.nvim' },
   },
 
+  -- auto theme switcher dark/light mode
+  { 'f-person/auto-dark-mode.nvim' },
+
   -- themes
   { 'ellisonleao/gruvbox.nvim' },
   { 'savq/melange-nvim' },

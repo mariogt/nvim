@@ -25,11 +25,20 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.cursorline = false
 
-vim.opt.background = 'dark'
-vim.cmd.colorscheme('gruvbox')
+-- #### THEMES ####
 -- rose-pine-main
 -- rose-pine-moon
 -- rose-pine-dawn
+-- gruvbox
+-- melange
+-- solarized-osaka
+-- kanagawa
+
+local auto_dark_mode = require('auto-dark-mode')
+auto_dark_mode.setup()
+
+vim.opt.background = 'light'
+vim.cmd.colorscheme('gruvbox')
 
 -- shared clipboard
 vim.o.clipboard = "unnamedplus"
