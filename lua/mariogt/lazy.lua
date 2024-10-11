@@ -23,7 +23,7 @@ require("lazy").setup({
   },
 
   -- auto theme switcher dark/light mode
-  { 'f-person/auto-dark-mode.nvim' },
+  { 'mariogt/auto-dark-mode.nvim' },
 
   -- themes
   { 'ellisonleao/gruvbox.nvim' },
