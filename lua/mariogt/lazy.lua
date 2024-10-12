@@ -31,7 +31,7 @@ require("lazy").setup({
   { 'craftzdog/solarized-osaka.nvim' },
   { 'rebelot/kanagawa.nvim' },
   { "rose-pine/neovim",              name = "rose-pine" },
-  { "mariogt/gruvbox.nvim",      priority = 1000,   config = true, opts = ... },
+  { "mariogt/gruvbox.nvim",          priority = 1000,   config = true, opts = ... },
   {
     "mariogt/cobalt2.nvim",
     event = { "ColorSchemePre" }, -- if you want to lazy load
@@ -71,18 +71,15 @@ require("lazy").setup({
   { 'neovim/nvim-lspconfig' },
   { 'hrsh7th/cmp-nvim-lsp' },
 
-  -- autocompletion 
-  { 'hrsh7th/nvim-cmp' },             -- autocompletion engine
-  { 'hrsh7th/cmp-buffer' },           -- source for text in buffer
-  { 'hrsh7th/cmp-path' },             -- source for file system paths in commands
-  { 'rafamadriz/friendly-snippets' }, -- useful snippet library
-  { 'saadparwaiz1/cmp_luasnip' },     -- for lua autocompletion
-  { 'onsails/lspkind.nvim' },         -- vs-code like pictograms
+  -- autocompletion
+  { 'hrsh7th/nvim-cmp' },     -- autocompletion engine
+  { 'hrsh7th/cmp-buffer' },   -- source for text in buffer
+  { 'hrsh7th/cmp-path' },     -- source for file system paths in commands
+  { 'onsails/lspkind.nvim' }, -- vs-code like pictograms
 
   -- snippets engines
-  { 'L3MON4D3/LuaSnip' },
   { 'SirVer/ultisnips' },
-  -- snippets colection
+  { 'quangnguyen30192/cmp-nvim-ultisnips' },
   { 'honza/vim-snippets' },
 
   -- tabby ml

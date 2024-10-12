@@ -2,8 +2,8 @@
 -- https://andrewcourter.substack.com/p/configure-linting-formatting-and
 
 local cmp = require('cmp')
-local luasnip = require("luasnip")
 local lspkind = require("lspkind")
+local ultisnips = require("cmp_nvim_ultisnips")
 
 cmp.setup({
   mapping = cmp.mapping.preset.insert({
@@ -15,17 +15,13 @@ cmp.setup({
     -- ['<C-d>'] = cmp.mapping.scroll_docs(4),
   }),
 
-  -- loads vscode style snippets from installed plugins (e.g. friendly-snippets)
-  require("luasnip.loaders.from_vscode").lazy_load(),
-
   cmp.setup({
     completion = {
       completeopt = "menu,menuone,preview,noselect",
     },
     snippet = { -- configure how nvim-cmp interacts with snippet engine
-      expand = function(args)
-        luasnip.lsp_expand(args.body)
-      end,
+      expand = ultisnips.expand,
+      snippet = ultisnips.snippet,
     },
     mapping = cmp.mapping.preset.insert({
       ["<C-n>"] = cmp.mapping.select_prev_item(), -- previous suggestion
@@ -38,6 +34,7 @@ cmp.setup({
     }),
     -- sources for autocompletion
     sources = cmp.config.sources({
+      { name = "ultisnips" },
       { name = "nvim_lsp" },
       { name = "luasnip" }, -- snippets
       { name = "buffer" },  -- text within current buffer
