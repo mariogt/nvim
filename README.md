@@ -70,15 +70,13 @@ Strangely WSL2 on Windows 10 works okayish without this hack, but on Windows 11 
 - <https://github.com/hrsh7th/nvim-cmp>
 - <https://github.com/hrsh7th/cmp-buffer>
 - <https://github.com/hrsh7th/cmp-path>
-- <https://github.com/rafamadriz/friendly-snippets>
-- <https://github.com/saadparwaiz1/cmp_luasnip>
 - <https://github.com/onsails/lspkind.nvim>
 
 ### Snippets
 
-- <https://github.com/L3MON4D3/LuaSnip>
 - <https://github.com/SirVer/ultisnips>
 - <https://github.com/honza/vim-snippets>
+- <https://github.com/quangnguyen30192/cmp-nvim-ultisnips>
 
 ### Themes
 
