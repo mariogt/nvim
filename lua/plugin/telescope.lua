@@ -19,14 +19,8 @@ telescope.setup {
       '--column',
       '--smart-case',
       '--hidden',
-    },
-    find_command = {
-      "rg",
-      "--files",
-      "--hidden",
-      -- hide these files and folders
+      -- Exclude some patterns from search
       "--glob=!**/.git/*",
-      "--glob=!**/.idea/*",
       "--glob=!**/.vscode/*",
       "--glob=!**/build/*",
       "--glob=!**/dist/*",
@@ -38,6 +32,20 @@ telescope.setup {
     find_files = {
       -- options dropdown/cursor/ivy
       --theme = "dropdown",
+      hidden = true,
+      -- needed to exclude some files & dirs from general search
+      -- when not included or specified in .gitignore
+      find_command = {
+        "rg",
+        "--files",
+        "--hidden",
+        "--glob=!**/.git/*",
+        "--glob=!**/.vscode/*",
+        "--glob=!**/build/*",
+        "--glob=!**/dist/*",
+        "--glob=!**/yarn.lock",
+        "--glob=!**/package-lock.json",
+      },
     }
   }
 }
