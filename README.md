@@ -83,7 +83,6 @@ Strangely WSL2 on Windows 10 works okayish without this hack, but on Windows 11 
 - <https://github.com/mariogt/auto-dark-mode.nvim>
 - <https://github.com/mariogt/gruvbox.nvim>
 - <https://github.com/mariogt/cobalt2.nvim>
-- <https://github.com/ellisonleao/gruvbox.nvim>
 - <https://github.com/rose-pine/neovim>
 - <https://github.com/craftzdog/solarized-osaka.nvim>
 - <https://github.com/savq/melange-nvim>
