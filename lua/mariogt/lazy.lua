@@ -71,15 +71,13 @@ require("lazy").setup({
   { 'neovim/nvim-lspconfig' },
   { 'hrsh7th/cmp-nvim-lsp' },
 
-  -- autocompletion
+  -- snippets - autocompletion
   { 'hrsh7th/nvim-cmp' },     -- autocompletion engine
   { 'hrsh7th/cmp-buffer' },   -- source for text in buffer
   { 'hrsh7th/cmp-path' },     -- source for file system paths in commands
-  { 'onsails/lspkind.nvim' }, -- vs-code like pictograms
-
-  -- snippets engines
-  { 'SirVer/ultisnips' },
   { 'quangnguyen30192/cmp-nvim-ultisnips' },
+  { 'onsails/lspkind.nvim' }, -- vs-code like pictograms
+  { 'SirVer/ultisnips' },
   { 'honza/vim-snippets' },
 
   -- tabby ml
