@@ -20,7 +20,9 @@ cmp.setup({
       completeopt = "menu,menuone,preview,noselect",
     },
     snippet = { -- configure how nvim-cmp interacts with snippet engine
-      expand = ultisnips.expand,
+      expand = function(args)
+        vim.fn["UltiSnips#Anon"](args.body)
+      end,
       snippet = ultisnips.snippet,
     },
     mapping = cmp.mapping.preset.insert({

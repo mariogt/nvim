@@ -25,6 +25,17 @@ vim.api.nvim_create_autocmd({ "BufWritePost" }, {
   group = autocmd_group,
 })
 
+-- Reload ultisnips after savin a snippets file
+vim.api.nvim_create_autocmd({ "BufWritePost" }, {
+  pattern = { "*.snippets" },
+  desc = "Reload snippets after saving",
+  callback = function()
+    vim.cmd(":CmpUltisnipsReloadSnippets")
+  end,
+  group = autocmd_group,
+})
+--autocmd BufWritePost *.snippets :CmpUltisnipsReloadSnippets
+
 -- Turn off paste mode when leaving insert
 vim.api.nvim_create_autocmd("InsertLeave", {
   pattern = "*",
