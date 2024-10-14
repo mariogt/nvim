@@ -41,6 +41,7 @@ Strangely WSL2 on Windows 10 works okayish without this hack, but on Windows 11 
 ### Navigation & UI
 
 - <https://github.com/nvim-telescope/telescope.nvim>
+- <https://github.com/fhill2/telescope-ultisnips.nvim>
 - <https://github.com/ThePrimeagen/harpoon/tree/harpoon2>
 - <https://github.com/folke/noice.nvim>
 

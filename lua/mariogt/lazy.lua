@@ -21,6 +21,8 @@ require("lazy").setup({
     tag = '0.1.5',
     dependencies = { 'nvim-lua/plenary.nvim' },
   },
+  -- telescope extensions
+  { 'fhill2/telescope-ultisnips.nvim' },
 
   -- auto theme switcher dark/light mode
   { 'mariogt/auto-dark-mode.nvim' },
@@ -30,8 +32,8 @@ require("lazy").setup({
   { 'savq/melange-nvim' },
   { 'craftzdog/solarized-osaka.nvim' },
   { 'rebelot/kanagawa.nvim' },
-  { "rose-pine/neovim",              name = "rose-pine" },
-  { "mariogt/gruvbox.nvim",          priority = 1000,   config = true, opts = ... },
+  { "rose-pine/neovim",               name = "rose-pine" },
+  { "mariogt/gruvbox.nvim",           priority = 1000,   config = true, opts = ... },
   {
     "mariogt/cobalt2.nvim",
     event = { "ColorSchemePre" }, -- if you want to lazy load
@@ -75,7 +77,7 @@ require("lazy").setup({
       -- OPTIONAL:
       --   `nvim-notify` is only needed, if you want to use the notification view.
       --   If not available, we use `mini` as the fallback
-      "rcarriga/nvim-notify",
+      -- "rcarriga/nvim-notify",
     }
   },
 
