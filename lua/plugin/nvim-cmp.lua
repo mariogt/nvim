@@ -4,6 +4,8 @@
 local cmp = require('cmp')
 local lspkind = require("lspkind")
 local ultisnips = require("cmp_nvim_ultisnips")
+local lspconfig = require("lspconfig")
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 cmp.setup({
   completion = {
@@ -29,6 +31,7 @@ cmp.setup({
 
   -- sources for autocompletion
   sources = cmp.config.sources({
+    { name = "nvim_lsp" },
     { name = "ultisnips" },
     { name = "buffer" }, -- text within current buffer
     { name = "path" },   -- file system paths
@@ -65,3 +68,11 @@ cmp.setup.cmdline(':', {
     }
   })
 })
+
+-- Configure Clangd
+lspconfig.clangd.setup {
+  capabilities = capabilities,
+  cmd = { "clangd" },
+  filetypes = { "c", "cpp", "objc", "objcpp", "h" },
+  root_dir = lspconfig.util.root_pattern("compile_commands.json", "compile_flags.txt", ".git"),
+}
