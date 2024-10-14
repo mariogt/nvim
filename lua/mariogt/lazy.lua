@@ -62,6 +62,23 @@ require("lazy").setup({
   { 'mbbill/undotree' },
   { 'tpope/vim-fugitive' },
 
+  -- folke noice
+  {
+    "folke/noice.nvim",
+    event = "VeryLazy",
+    opts = {
+      -- add any options here
+    },
+    dependencies = {
+      -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
+      "MunifTanjim/nui.nvim",
+      -- OPTIONAL:
+      --   `nvim-notify` is only needed, if you want to use the notification view.
+      --   If not available, we use `mini` as the fallback
+      -- "rcarriga/nvim-notify",
+    }
+  },
+
   -- floaterm
   { 'voldikss/vim-floaterm' },
 
@@ -69,12 +86,13 @@ require("lazy").setup({
   { 'williamboman/mason.nvim' },
   { 'williamboman/mason-lspconfig.nvim' },
   { 'neovim/nvim-lspconfig' },
-  { 'hrsh7th/cmp-nvim-lsp' },
 
   -- snippets - autocompletion
   { 'hrsh7th/nvim-cmp' },     -- autocompletion engine
+  { 'hrsh7th/cmp-nvim-lsp' }, -- source for lsp
   { 'hrsh7th/cmp-buffer' },   -- source for text in buffer
   { 'hrsh7th/cmp-path' },     -- source for file system paths in commands
+  { 'hrsh7th/cmp-cmdline' },  -- source for folke command line
   { 'quangnguyen30192/cmp-nvim-ultisnips' },
   { 'onsails/lspkind.nvim' }, -- vs-code like pictograms
   { 'SirVer/ultisnips' },

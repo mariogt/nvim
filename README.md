@@ -38,10 +38,11 @@ Strangely WSL2 on Windows 10 works okayish without this hack, but on Windows 11 
 
 - <https://github.com/folke/lazy.nvim>
 
-### Navigation
+### Navigation & UI
 
 - <https://github.com/nvim-telescope/telescope.nvim>
 - <https://github.com/ThePrimeagen/harpoon/tree/harpoon2>
+- <https://github.com/folke/noice.nvim>
 
 ### Code parser/formatting/highlighting
 
@@ -63,13 +64,14 @@ Strangely WSL2 on Windows 10 works okayish without this hack, but on Windows 11 
 - <https://github.com/williamboman/mason.nvim>
 - <https://github.com/williamboman/mason-lspconfig.nvim>
 - <https://github.com/neovim/nvim-lspconfig>
-- <https://github.com/hrsh7th/cmp-nvim-lsp>
 
 ### Snippets & Autocompletion
 
 - <https://github.com/hrsh7th/nvim-cmp>
+- <https://github.com/hrsh7th/cmp-nvim-lsp>
 - <https://github.com/hrsh7th/cmp-buffer>
 - <https://github.com/hrsh7th/cmp-path>
+- <https://github.com/hrsh7th/cmp-cmdline>
 - <https://github.com/onsails/lspkind.nvim>
 - <https://github.com/SirVer/ultisnips>
 - <https://github.com/honza/vim-snippets>
