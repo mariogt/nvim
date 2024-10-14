@@ -34,9 +34,6 @@ vim.opt.cursorline = false
 -- solarized-osaka
 -- kanagawa
 
-local auto_dark_mode = require('auto-dark-mode')
-auto_dark_mode.setup()
-
 vim.opt.background = 'light'
 vim.cmd.colorscheme('gruvbox')
 

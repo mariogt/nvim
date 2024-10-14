@@ -9,7 +9,8 @@ vim.keymap.set('n', '<leader>xs', builtin.lsp_document_symbols, {})
 vim.keymap.set('n', '<leader>sx', function()
   builtin.grep_string({ search = vim.fn.input("Grep > ") });
 end)
-vim.keymap.set('n', '<leader>sd',":Telescope ultisnips<CR>")
+vim.keymap.set('n', '<leader>sd', ":Telescope ultisnips<CR>")
+vim.keymap.set('n', '<leader>ds', ":Telescope noice<CR>")
 
 -- required if you want to show dot files on telescope
 local telescope = require('telescope')
