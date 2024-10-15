@@ -20,6 +20,9 @@ This is my first successful attemp to generate a usable Neovim setup for my prog
 
 Some context, right now I'm living in a Mac/PC world, Win 11 + WSL2 on my PC Mega Tower, macOS (obviously) on my MacBook Pro M3 Max. In this setup NeoVim blends perfectly, works fast on my laptop, my PC, and over SSH, super fast and low latency experience!
 
+My NeoVim build contains some plugins that I forked and customized, like auto-dark-mode, modified for proper WSL detection, and gruvbox/cobalt2 themes with
+more pleasant colors and other minor tweaks.
+
 ### WSL2 tips
 
 Drastically improve your linux and NeoVim speed on Windows 11 putting these lines into /etc/wsl.conf
