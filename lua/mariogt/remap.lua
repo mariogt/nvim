@@ -36,6 +36,9 @@ vim.keymap.set("n", "<leader>Y", [["+Y]])         -- system clipboard
 -- set read only
 vim.keymap.set("n", "<F7>", ":set readonly!<CR>")
 
+-- open todo file
+vim.keymap.set("n", "<F9><F9>", ":e ~/OneDrive/Documentos/remember.txt<CR>G")
+
 -- copy all
 -- vim.keymap.set("n", "<F8>", "<cmd>%y+<CR>")
 
