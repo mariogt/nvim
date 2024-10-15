@@ -23,7 +23,7 @@ vim.opt.autoread = true
 vim.opt.hlsearch = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
-vim.opt.cursorline = false
+vim.opt.cursorline = true
 
 -- #### THEMES ####
 -- rose-pine-main
