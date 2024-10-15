@@ -2,7 +2,7 @@
 local is_macos = vim.fn.has("mac") == 1
 local is_windows = vim.fn.has("win32") == 1
 local is_linux = vim.fn.has("unix") == 1
-local is_WSL = vim.fn.has("win32unix") == 1
+local is_WSL = vim.fn.has("wsl") == 1
 
 -- leader remap
 vim.g.mapleader = " "
