@@ -63,9 +63,6 @@ vim.keymap.set("n", "<F9>", ":FloatermNew --height=0.9 --width=0.9 --wintype=flo
 vim.keymap.set("n", "<F8>", ":FloatermToggle<CR>")
 vim.keymap.set("t", "<F8>", "<C-\\><C-n>:FloatermToggle<CR>")
 
--- exit vim
-vim.keymap.set("n", "<F10>", vim.cmd.qa) -- quit all
-
 -- select all
 vim.keymap.set("n", "ÑÑ", "gg<S-v>G")
 
