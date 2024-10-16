@@ -1,6 +1,3 @@
--- https://github.com/VonHeikemen/lsp-zero.nvim/blob/v3.x/doc/md/autocomplete.md#how-does-it-work
--- https://andrewcourter.substack.com/p/configure-linting-formatting-and
-
 local cmp = require('cmp')
 local lspkind = require("lspkind")
 local ultisnips = require("cmp_nvim_ultisnips")

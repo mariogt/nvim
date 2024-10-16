@@ -16,5 +16,5 @@
 -- map_c_w = false -- map <c-w> to delete a pair if possible
 
 require('nvim-autopairs').setup({
-  -- disable_filetype = { "TelescopePrompt" , "vim" },
+  disable_filetype = { "TelescopePrompt" },
 })

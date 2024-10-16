@@ -61,8 +61,13 @@ require("lazy").setup({
     branch = "harpoon2",
     requires = { { "nvim-lua/plenary.nvim" } }
   },
+
+  -- undo manager
   { 'mbbill/undotree' },
+
+  -- git
   { 'tpope/vim-fugitive' },
+  { 'lewis6991/gitsigns.nvim' },
 
   -- folke noice
   {
@@ -114,10 +119,5 @@ require("lazy").setup({
     config = true
     -- use opts = {} for passing setup options
     -- this is equalent to setup({}) function
-  },
-
-  -- git signs
-  {
-    'lewis6991/gitsigns.nvim',
   },
 })
