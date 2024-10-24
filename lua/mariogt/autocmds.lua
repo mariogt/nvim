@@ -3,8 +3,18 @@
 -- auto-command repeatedly every time a file is resourced
 local autocmd_group = vim.api.nvim_create_augroup("Custom auto-commands", { clear = true })
 
--- Format MD files after saving
-vim.api.nvim_create_autocmd({ "BufWritePost" }, {
+-- remove all trailing spaces before saving
+vim.api.nvim_create_autocmd({ "BufWritePre" }, {
+  pattern = { "*.*" },
+  desc = "Remove all trailing spaces before saving",
+  callback = function()
+    vim.cmd(":%s/\\s\\+$//e")
+  end,
+  group = autocmd_group,
+})
+
+-- Format MD files before saving
+vim.api.nvim_create_autocmd({ "BufWritePre" }, {
   pattern = { "*.md", "*.MD" },
   desc = "Auto-format MD files after saving",
   callback = function()
@@ -14,8 +24,8 @@ vim.api.nvim_create_autocmd({ "BufWritePost" }, {
   group = autocmd_group,
 })
 
--- Format sh files after saving
-vim.api.nvim_create_autocmd({ "BufWritePost" }, {
+-- Format sh files before saving
+vim.api.nvim_create_autocmd({ "BufWritePre" }, {
   pattern = { "*.sh" },
   desc = "Auto-format sh files after saving",
   callback = function()
