@@ -16,7 +16,7 @@ vim.api.nvim_create_autocmd({ "BufWritePre" }, {
 -- Format MD files before saving
 vim.api.nvim_create_autocmd({ "BufWritePre" }, {
   pattern = { "*.md", "*.MD" },
-  desc = "Auto-format MD files after saving",
+  desc = "Auto-format MD files before saving",
   callback = function()
     local fileName = vim.api.nvim_buf_get_name(0)
     vim.cmd(":silent !mdformat " .. fileName)
@@ -27,7 +27,7 @@ vim.api.nvim_create_autocmd({ "BufWritePre" }, {
 -- Format sh files before saving
 vim.api.nvim_create_autocmd({ "BufWritePre" }, {
   pattern = { "*.sh" },
-  desc = "Auto-format sh files after saving",
+  desc = "Auto-format sh files before saving",
   callback = function()
     local fileName = vim.api.nvim_buf_get_name(0)
     vim.cmd(":silent !shfmt -l -w " .. fileName)
