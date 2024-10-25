@@ -17,7 +17,13 @@ require("noice").setup({
   },
 })
 
+-- nvim-notify setup / embeded here because is installed with noice
 require("notify").setup({
-  stages = "fade",
-  timeout = 8000,
+  stages = "static", -- can be static/fade/slide
+  timeout = 4000,    -- time in miliseconds
 })
+
+-- keybindig for dismiss an alert
+vim.keymap.set("n", "<Leader>d", function()
+  require("notify").dismiss({ silent = true, pending = false })
+end)
