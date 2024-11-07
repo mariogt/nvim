@@ -35,7 +35,7 @@ vim.api.nvim_create_autocmd({ "BufWritePre" }, {
   group = autocmd_group,
 })
 
--- Reload ultisnips after savin a snippets file
+-- Reload ultisnips after saving a snippets file
 vim.api.nvim_create_autocmd({ "BufWritePost" }, {
   pattern = { "*.snippets" },
   desc = "Reload snippets after saving",
