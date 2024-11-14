@@ -106,7 +106,7 @@ require("lazy").setup({
   { 'honza/vim-snippets' },
 
   -- tabby ml
-  -- { 'TabbyML/vim-tabby' },
+  { 'TabbyML/vim-tabby' },
 
   -- vim-tmux-navigator
   { 'christoomey/vim-tmux-navigator' },
