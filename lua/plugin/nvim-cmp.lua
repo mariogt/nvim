@@ -3,7 +3,7 @@ local lspkind = require("lspkind")
 local ultisnips = require("cmp_nvim_ultisnips")
 local lspconfig = require("lspconfig")
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
-local cmp_ultisnips_mappings = require("cmp_nvim_ultisnips.mappings")
+--local cmp_ultisnips_mappings = require("cmp_nvim_ultisnips.mappings")
 
 cmp.setup({
   completion = {
@@ -18,31 +18,31 @@ cmp.setup({
   },
 
   -- normal mappings
-  -- mapping = cmp.mapping.preset.insert({
-  --   ["<C-n>"] = cmp.mapping.select_prev_item(), -- previous suggestion
-  --   ["<C-p>"] = cmp.mapping.select_next_item(), -- next suggestion
-  --   ["<C-u>"] = cmp.mapping.scroll_docs(-4),
-  --   ["<C-d>"] = cmp.mapping.scroll_docs(4),
-  --   ["<C-Space>"] = cmp.mapping.complete(), -- show completion suggestions
-  --   ["<C-e>"] = cmp.mapping.abort(),        -- close completion window
-  --   ["<CR>"] = cmp.mapping.confirm({ select = true }),
-  -- }),
+  mapping = cmp.mapping.preset.insert({
+    ["<C-Right>"] = cmp.mapping.select_prev_item(), -- previous suggestion
+    ["<C-Left>"] = cmp.mapping.select_next_item(),  -- next suggestion
+    ["<C-u>"] = cmp.mapping.scroll_docs(-4),
+    ["<C-d>"] = cmp.mapping.scroll_docs(4),
+    ["<C-Space>"] = cmp.mapping.complete(), -- show completion suggestions
+    ["<C-e>"] = cmp.mapping.abort(),        -- close completion window
+    ["<CR>"] = cmp.mapping.confirm({ select = true }),
+  }),
 
-  -- mappings for tabs freaks
-  mapping = {
-    ["<Tab>"] = cmp.mapping(
-      function(fallback)
-        cmp_ultisnips_mappings.expand_or_jump_forwards(fallback)
-      end,
-      { "i", "s", --[[ "c" (to enable the mapping in command mode) ]] }
-    ),
-    ["<S-Tab>"] = cmp.mapping(
-      function(fallback)
-        cmp_ultisnips_mappings.jump_backwards(fallback)
-      end,
-      { "i", "s", --[[ "c" (to enable the mapping in command mode) ]] }
-    ),
-  },
+  -- -- mappings for tabs freaks
+  -- mapping = {
+  --   ["<Tab>"] = cmp.mapping(
+  --     function(fallback)
+  --       cmp_ultisnips_mappings.expand_or_jump_forwards(fallback)
+  --     end,
+  --     { "i", "s", --[[ "c" (to enable the mapping in command mode) ]] }
+  --   ),
+  --   ["<S-Tab>"] = cmp.mapping(
+  --     function(fallback)
+  --       cmp_ultisnips_mappings.jump_backwards(fallback)
+  --     end,
+  --     { "i", "s", --[[ "c" (to enable the mapping in command mode) ]] }
+  --   ),
+  -- },
 
   -- sources for autocompletion
   sources = cmp.config.sources({
