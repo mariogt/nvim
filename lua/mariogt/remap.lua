@@ -46,7 +46,7 @@ vim.keymap.set("n", "<F7>", ":set readonly!<CR>")
 if is_macos then
   vim.keymap.set("n", "<F9><F9>", ":e ~/OneDrive/Documentos/remember.txt<CR>G")
 elseif is_linux then
-  vim.keymap.set("n", "<F9><F9>", ":e ~/remember.txt<CR>G")
+  vim.keymap.set("n", "<F9><F9>", ":e ~/onedrive/Documentos/remember.txt<CR>G")
 elseif is_wsl then
   vim.keymap.set("n", "<F9><F9>", ":e /mnt/c/Users/mario/OneDrive/Documentos/remember.txt<CR>G")
 end
