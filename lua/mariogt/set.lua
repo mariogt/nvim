@@ -34,9 +34,15 @@ vim.opt.cursorline = true
 -- solarized-osaka
 -- kanagawa
 
-vim.opt.background = 'light'
+vim.opt.background = 'dark'
 vim.cmd.colorscheme('gruvbox')
 
+-- transparent background
+vim.cmd([[highlight Normal guibg=none]])
+vim.cmd([[highlight NonText guibg=none]])
+vim.cmd([[highlight Normal ctermbg=none]])
+vim.cmd([[highlight NonText ctermbg=none]])
+--
 -- shared clipboard
 vim.o.clipboard = "unnamedplus"
 
