@@ -96,7 +96,7 @@ vim.keymap.set("n", "<C-Right>", "<cmd>vertical resize +2<CR>")
 vim.keymap.set("n", "++", "<cmd>nohl<CR>")
 
 -- more convenient search & replace
-vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+vim.keymap.set("n", "<leader>s", [[:%s/x/y/gI]])
 
 --tmux vim like shortcuts integration
 vim.keymap.set("n", "<C-h>", "<cmd> TmuxNavigateLeft<CR>")

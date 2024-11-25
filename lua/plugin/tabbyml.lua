@@ -1,5 +1,0 @@
--- keybindings
--- vim.g.tabby_agent_start_command = { "npx", "tabby-agent", "--stdio" }
--- vim.g.tabby_inline_completion_keybinding_trigger_or_dismiss = "<C-z>"
--- vim.g.tabby_keybinding_accept = "<C-x>"
--- vim.g.tabby_keybinding_trigger_or_dismiss = "<C-Shift-Right>"
