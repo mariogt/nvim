@@ -1,6 +1,6 @@
 -- Detect system type
 local is_macos = vim.fn.has("mac") == 1
--- local is_windows = vim.fn.has("win32") == 1
+local is_windows = vim.fn.has("win32") == 1
 local is_wsl = vim.fn.has("wsl") == 1
 local is_linux = vim.fn.has("unix") == 1 and not is_macos and not is_wsl
 
@@ -49,6 +49,8 @@ elseif is_linux then
   vim.keymap.set("n", "<F9><F9>", ":e ~/onedrive/Documentos/remember.txt<CR>G")
 elseif is_wsl then
   vim.keymap.set("n", "<F9><F9>", ":e /mnt/c/Users/mario/OneDrive/Documentos/remember.txt<CR>G")
+elseif is_windows then
+  vim.keymap.set("n", "<F9><F9>", ":e c:\\Users\\mario\\OneDrive\\Documentos\\remember.txt<CR>G")
 end
 
 -- copy all
