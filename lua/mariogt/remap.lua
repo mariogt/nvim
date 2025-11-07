@@ -15,7 +15,10 @@ vim.keymap.set("v", "<A-f>", "<esc>")
 vim.keymap.set("n", "<leader>¿", vim.cmd.Ex)
 
 -- formating
-vim.keymap.set("n", "<F12>", "gg=G")
+--vim.keymap.set("n", "<F12>", "gg=G")
+
+-- file explorer
+vim.keymap.set("n", "<F12>", ":NvimTreeToggle<CR>")
 
 -- buffer nav
 vim.keymap.set("n", "<F1>", vim.cmd.bp)    -- next buffer

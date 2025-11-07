@@ -62,6 +62,9 @@ require("lazy").setup({
     requires = { { "nvim-lua/plenary.nvim" } }
   },
 
+  -- file explorer
+  { "nvim-tree/nvim-tree.lua" },
+
   -- undo manager
   { 'mbbill/undotree' },
 
