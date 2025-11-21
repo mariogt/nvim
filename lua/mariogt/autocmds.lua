@@ -35,6 +35,17 @@ vim.api.nvim_create_autocmd({ "BufWritePost" }, {
   group = autocmd_group,
 })
 
+-- Format ruby files before saving
+vim.api.nvim_create_autocmd({ "BufWritePost" }, {
+  pattern = { "*.rb" },
+  desc = "Auto-format ruby files before saving",
+  callback = function()
+    local fileName = vim.api.nvim_buf_get_name(0)
+    vim.cmd(":!rubyfmt -i " .. fileName)
+  end,
+  group = autocmd_group,
+})
+
 -- Reload ultisnips after saving a snippets file
 vim.api.nvim_create_autocmd({ "BufWritePost" }, {
   pattern = { "*.snippets" },

@@ -11,6 +11,7 @@ lspconfig.pylsp.setup {}
 lspconfig.ts_ls.setup {}
 lspconfig.zls.setup {}
 lspconfig.ruby_lsp.setup {}
+lspconfig.herb_ls.setup {}
 
 lspconfig.html.setup {
   settings = {
