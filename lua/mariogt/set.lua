@@ -26,16 +26,15 @@ vim.opt.smartcase = true
 vim.opt.cursorline = true
 
 -- #### THEMES ####
--- rose-pine-main
--- rose-pine-moon
--- rose-pine-dawn
+-- rose-pine main/dawn/moon
+-- kanagawa wave/dragon/lotus
 -- gruvbox
 -- melange
 -- solarized-osaka
--- kanagawa
 
-vim.opt.background = 'dark'
-vim.cmd.colorscheme('gruvbox')
+-- color theme setted on auto-dark-mode.lua
+-- vim.opt.background = 'dark'
+-- vim.cmd.colorscheme('gruvbox')
 
 -- shared clipboard
 vim.o.clipboard = "unnamedplus"
