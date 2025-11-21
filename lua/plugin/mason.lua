@@ -15,6 +15,7 @@ require("mason-lspconfig").setup {
     "zls",
     "pylsp",
     "ruby_lsp",
-    "herb_ls"
+    "herb_ls",
+    "yamlls"
   }
 }

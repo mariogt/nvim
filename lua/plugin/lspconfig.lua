@@ -11,13 +11,14 @@ lspconfig.pylsp.setup {}
 lspconfig.ts_ls.setup {}
 lspconfig.zls.setup {}
 lspconfig.ruby_lsp.setup {}
+lspconfig.yamlls.setup {}
 lspconfig.herb_ls.setup {}
 
 lspconfig.html.setup {
   settings = {
     html = {
       format = {
-        wrapLineLength = 150,
+        wrapLineLength = 150
       }
     }
   }
@@ -28,17 +29,22 @@ lspconfig.lua_ls.setup {
     Lua = {
       diagnostics = {
         -- Get the language server to recognize the `vim` global
-        globals = { 'vim' },
+        globals = {
+          'vim'
+        }
       },
-    },
-  },
+      format = {
+        enable = true
+      }
+    }
+  }
 }
 
 lspconfig.rust_analyzer.setup {
   -- Server-specific settings. See `:help lspconfig-setup`
   settings = {
     ['rust-analyzer'] = {},
-  },
+  }
 }
 
 -- Global mappings.
