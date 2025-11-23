@@ -20,7 +20,7 @@ This is my first successful attemp to generate a usable Neovim setup for my prog
 
 Some context, right now I'm living in a Mac/PC world, Win 11 + WSL2 on my PC Mega Tower, macOS (obviously) on my MacBook Pro M3 Max. In this setup NeoVim blends perfectly, works fast on my laptop, my PC, and over SSH, super fast and low latency experience!
 
-My NeoVim build contains some plugins that I forked and customized, like auto-dark-mode, modified for proper WSL detection, and gruvbox/cobalt2 themes with
+My NeoVim build contains some plugins that I forked and customized, like auto-dark-mode, modified for proper WSL detection, and gruvbox theme with
 more pleasant colors and other minor tweaks.
 
 ### WSL2 tips
@@ -47,6 +47,10 @@ Strangely WSL2 on Windows 10 works okayish without this hack, but on Windows 11 
 - <https://github.com/fhill2/telescope-ultisnips.nvim>
 - <https://github.com/ThePrimeagen/harpoon/tree/harpoon2>
 - <https://github.com/folke/noice.nvim>
+
+## File explorer
+
+- <https://github.com/nvim-tree/nvim-tree.lua>
 
 ### Code parser/formatting/highlighting
 
@@ -85,7 +89,6 @@ Strangely WSL2 on Windows 10 works okayish without this hack, but on Windows 11 
 
 - <https://github.com/mariogt/auto-dark-mode.nvim>
 - <https://github.com/mariogt/gruvbox.nvim>
-- <https://github.com/mariogt/cobalt2.nvim>
 - <https://github.com/rose-pine/neovim>
 - <https://github.com/craftzdog/solarized-osaka.nvim>
 - <https://github.com/savq/melange-nvim>

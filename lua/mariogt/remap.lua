@@ -1,8 +1,8 @@
--- Detect system type
-local is_macos = vim.fn.has("mac") == 1
-local is_windows = vim.fn.has("win32") == 1
-local is_wsl = vim.fn.has("wsl") == 1
-local is_linux = vim.fn.has("unix") == 1 and not is_macos and not is_wsl
+-- Detect system type and store on global vars
+IsMacOS = vim.fn.has("mac") == 1
+IsWindows = vim.fn.has("win32") == 1
+IsWSL = vim.fn.has("wsl") == 1
+IsLinux = vim.fn.has("unix") == 1 and not IsMacOS and not IsWSL
 
 -- leader remap
 vim.g.mapleader = " "
@@ -46,13 +46,13 @@ vim.keymap.set("n", "<leader>Y", [["+Y]])         -- system clipboard
 vim.keymap.set("n", "<F7>", ":set readonly!<CR>")
 
 -- open todo file
-if is_macos then
+if IsMacOS then
   vim.keymap.set("n", "<F9><F9>", ":e ~/OneDrive/Documentos/remember.txt<CR>G")
-elseif is_linux then
+elseif IsLinux then
   vim.keymap.set("n", "<F9><F9>", ":e ~/onedrive/Documentos/remember.txt<CR>G")
-elseif is_wsl then
+elseif IsWSL then
   vim.keymap.set("n", "<F9><F9>", ":e /mnt/c/Users/mario/OneDrive/Documentos/remember.txt<CR>G")
-elseif is_windows then
+elseif IsWindows then
   vim.keymap.set("n", "<F9><F9>", ":e c:\\Users\\mario\\OneDrive\\Documentos\\remember.txt<CR>G")
 end
 
