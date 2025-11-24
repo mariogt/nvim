@@ -111,6 +111,10 @@ Strangely WSL2 on Windows 10 works okayish without this hack, but on Windows 11 
 - <https://github.com/TabbyML/tabby>
 - <https://github.com/TabbyML/vim-tabby>
 
+## Copilot
+
+- <https://github.com/github/copilot.vim>
+
 ## Patched fonts
 
 - <https://github.com/ryanoasis/nerd-fonts/releases>
