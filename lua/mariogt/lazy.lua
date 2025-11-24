@@ -101,8 +101,7 @@ require("lazy").setup({
   { 'honza/vim-snippets' },
 
   -- copilot
-  { 'github/copilot.vim'},
-
+  { 'github/copilot.vim' },
 
   -- -- Tabby plugin
   -- {
