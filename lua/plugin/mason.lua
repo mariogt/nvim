@@ -16,6 +16,7 @@ require("mason-lspconfig").setup {
     "pylsp",
     "ruby_lsp",
     "herb_ls",
-    "yamlls"
+    "yamlls",
+    "lemminx"
   }
 }
