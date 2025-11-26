@@ -28,7 +28,6 @@ require("lazy").setup({
   { 'mariogt/auto-dark-mode.nvim' },
 
   -- themes
-  { 'ellisonleao/gruvbox.nvim' },
   { 'savq/melange-nvim' },
   { 'craftzdog/solarized-osaka.nvim' },
   { 'rebelot/kanagawa.nvim' },

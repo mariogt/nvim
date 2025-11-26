@@ -93,6 +93,7 @@ Strangely WSL2 on Windows 10 works okayish without this hack, but on Windows 11 
 - <https://github.com/craftzdog/solarized-osaka.nvim>
 - <https://github.com/savq/melange-nvim>
 - <https://github.com/rebelot/kanagawa.nvim>
+- <https://github.com/NLKNguyen/papercolor-theme>
 
 ### Statusline
 
