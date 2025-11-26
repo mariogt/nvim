@@ -34,6 +34,7 @@ require("lazy").setup({
   { 'rebelot/kanagawa.nvim' },
   { "rose-pine/neovim",               name = "rose-pine" },
   { "mariogt/gruvbox.nvim",           priority = 1000,   config = true, opts = ... },
+  { "NLKNguyen/papercolor-theme" },
 
   -- status line
   {
