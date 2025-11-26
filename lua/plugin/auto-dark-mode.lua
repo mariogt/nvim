@@ -5,7 +5,7 @@ auto_dark_mode.setup({
   transparent_dark_background = false,
   set_dark_mode = function()
     vim.api.nvim_set_option_value('background', 'dark', {})
-    vim.cmd('colorscheme habamax')
+    vim.cmd('colorscheme gruvbox')
   end,
   set_light_mode = function()
     vim.api.nvim_set_option_value('background', 'light', {})
