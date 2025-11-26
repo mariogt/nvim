@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://mariogt.com/Media/gruvBoxMedia/mariogt_gruvbox_dark.png" height="60%"/>
+    <img src="https://mariogt.com/Media/gruvBoxMedia/nvim.jpg" width="80%"/>
 </p>
 
 ## Overview
