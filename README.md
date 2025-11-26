@@ -1,4 +1,6 @@
-![mariogt nvim setup](/media/gtnvim.png "nvim")
+<p align="center">
+    <img src="https://mariogt.com/Media/gruvBoxMedia/mariogt_gruvbox_dark.png" height="60%"/>
+</p>
 
 ## Overview
 
