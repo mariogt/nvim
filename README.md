@@ -22,8 +22,8 @@ This is my first successful attemp to generate a usable Neovim setup for my prog
 
 Some context, right now I'm living in a Mac/PC world, Win 11 + WSL2 on my PC Mega Tower, macOS (obviously) on my MacBook Pro M3 Max. In this setup NeoVim blends perfectly, works fast on my laptop, my PC, and over SSH, super fast and low latency experience!
 
-My NeoVim build contains some plugins that I forked and customized, like auto-dark-mode, modified for proper WSL detection, and gruvbox theme with
-more pleasant colors and other minor tweaks.
+My NeoVim build contains some plugins that I forked and customized, like auto-dark-mode, modified for proper WSL detection, gruvbox theme with
+more pleasant colors and other minor tweaks, and nvim-colorizer with fixed deprecations.
 
 ### WSL2 tips
 
@@ -103,7 +103,7 @@ Strangely WSL2 on Windows 10 works okayish without this hack, but on Windows 11 
 
 ### Hex color codes colorizer
 
-- <https://github.com/norcalli/nvim-colorizer.lua>
+- <https://github.com/mariogt/nvim-colorizer.lua>
 
 ### Floating Terminal
 

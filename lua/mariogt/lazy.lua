@@ -42,7 +42,7 @@ require("lazy").setup({
   },
 
   -- hex colorizer
-  { "norcalli/nvim-colorizer.lua" },
+  { "mariogt/nvim-colorizer.lua" },
 
   -- mix
   { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
