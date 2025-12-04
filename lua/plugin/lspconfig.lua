@@ -14,6 +14,7 @@ lspconfig.ruby_lsp.setup {}
 lspconfig.yamlls.setup {}
 lspconfig.herb_ls.setup {}
 lspconfig.lemminx.setup {}
+lspconfig.powershell_es.setup {}
 
 lspconfig.html.setup {
   settings = {
