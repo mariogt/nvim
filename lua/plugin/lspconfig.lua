@@ -14,7 +14,21 @@ lspconfig.ruby_lsp.setup {}
 lspconfig.yamlls.setup {}
 lspconfig.herb_ls.setup {}
 lspconfig.lemminx.setup {}
-lspconfig.powershell_es.setup {}
+
+lspconfig.powershell_es.setup {
+  cmd = {
+    "pwsh", "-NoLogo", "-NoProfile", "-Command",
+    "~/.powershell_es/PowerShellEditorServices/Start-EditorServices.ps1",
+    "-HostName", "nvim",
+    "-HostProfileId", "nvim",
+    "-HostVersion", "1.0.0",
+    "-LogLevel", "Information", -- not "Normal"
+    "-Stdio",                   -- critical: forces LSP over stdio
+    "-BundledModulesPath", "~/.powershell_es/modules"
+  },
+  filetypes = { "ps1" },
+  root_dir = lspconfig.util.root_pattern(".git")
+}
 
 lspconfig.html.setup {
   settings = {
