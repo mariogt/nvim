@@ -53,16 +53,15 @@ telescope.setup {
         "--glob=!**/yarn.lock",
         "--glob=!**/package-lock.json",
       },
-    }
+    },
   },
   extensions = {
     media_files = {
       -- filetypes whitelist
       -- defaults to {"png", "jpg", "mp4", "webm", "pdf"}
-      filetypes = { "png", "webp", "jpg", "jpeg" },
-      -- find command (defaults to `fd`)
-      find_cmd = "rg"
-    }
+      filetypes = { "png", "jpg", "jpeg", "mp4", "webm", "pdf" },
+      find_cmd = "rg",
+    },
   },
 }
 

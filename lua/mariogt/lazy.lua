@@ -23,6 +23,7 @@ require("lazy").setup({
   },
   -- telescope extensions
   { 'fhill2/telescope-ultisnips.nvim' },
+  { 'nvim-lua/popup.nvim' },
   -- telscope image preview
   { 'nvim-telescope/telescope-media-files.nvim' },
 
