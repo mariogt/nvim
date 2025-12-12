@@ -2,6 +2,7 @@
 
 require("telescope").load_extension("noice")
 require('telescope').load_extension("ultisnips")
+require('telescope').load_extension("media_files")
 
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
@@ -53,7 +54,16 @@ telescope.setup {
         "--glob=!**/package-lock.json",
       },
     }
-  }
+  },
+  extensions = {
+    media_files = {
+      -- filetypes whitelist
+      -- defaults to {"png", "jpg", "mp4", "webm", "pdf"}
+      filetypes = { "png", "webp", "jpg", "jpeg" },
+      -- find command (defaults to `fd`)
+      find_cmd = "rg"
+    }
+  },
 }
 
 return {

@@ -23,6 +23,8 @@ require("lazy").setup({
   },
   -- telescope extensions
   { 'fhill2/telescope-ultisnips.nvim' },
+  -- telscope image preview
+  { 'nvim-telescope/telescope-media-files.nvim' },
 
   -- auto theme switcher dark/light mode
   { 'mariogt/auto-dark-mode.nvim' },
