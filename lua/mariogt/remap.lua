@@ -17,6 +17,29 @@ vim.keymap.set("n", "<leader>¿", vim.cmd.Ex)
 -- formating
 --vim.keymap.set("n", "<F12>", "gg=G")
 
+-- show invisible characters
+vim.keymap.set("n", "hh", function()
+  -- Set your preferred invisible characters
+  vim.opt.listchars = {
+    tab = "▸·",
+    space = "⋅",
+    trail = "•",
+    extends = "»",
+    precedes = "«",
+    nbsp = "␣",
+  }
+
+  -- Toggle list on/off
+  vim.o.list = not vim.o.list
+
+  -- Force redraw to ensure display updates
+  vim.cmd("redraw!")
+
+  -- Optional: Show current state
+  local state = vim.o.list and "ON" or "OFF"
+  vim.notify("Invisible characters " .. state, vim.log.levels.INFO)
+end, {})
+
 -- file explorer
 vim.keymap.set("n", "<F12>", ":NvimTreeToggle<CR>")
 
@@ -104,6 +127,10 @@ vim.keymap.set("n", "++", "<cmd>nohl<CR>")
 vim.keymap.set("n", "<leader>s", [[:%s/x/y/gI]])
 
 --tmux vim like shortcuts integration
+vim.keymap.set("n", "<C-h>", "<cmd> TmuxNavigateLeft<CR>")
+vim.keymap.set("n", "<C-l>", "<cmd> TmuxNavigateRight<CR>")
+vim.keymap.set("n", "<C-k>", "<cmd> TmuxNavigateDown<CR>")
+vim.keymap.set("n", "<C-j>", "<cmd> TmuxNavigateUp<CR>")
 vim.keymap.set("n", "<C-h>", "<cmd> TmuxNavigateLeft<CR>")
 vim.keymap.set("n", "<C-l>", "<cmd> TmuxNavigateRight<CR>")
 vim.keymap.set("n", "<C-k>", "<cmd> TmuxNavigateDown<CR>")
