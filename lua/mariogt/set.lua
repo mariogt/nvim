@@ -24,8 +24,6 @@ vim.opt.hlsearch = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.cursorline = true
-vim.opt.messagesopt:append('wait:0')
-vim.opt.messagesopt:remove('hit-enter')
 
 -- #### THEMES ####
 -- rose-pine main/dawn/moon

@@ -1,106 +1,116 @@
--- Setup language servers.
-local lspconfig = require('lspconfig')
+-- Disable deprecated framework warning (optional)
+-- vim.lsp.set_log_level("OFF")
 
-lspconfig.clangd.setup {}
-lspconfig.gopls.setup {}
-lspconfig.cssls.setup {}
-lspconfig.jsonls.setup {}
-lspconfig.bashls.setup {}
-lspconfig.marksman.setup {}
-lspconfig.pylsp.setup {}
-lspconfig.ts_ls.setup {}
-lspconfig.zls.setup {}
-lspconfig.ruby_lsp.setup {}
-lspconfig.yamlls.setup {}
-lspconfig.lemminx.setup {}
+-----------------------------------------------------------
+-- 1. Language server configurations (new API)
+-----------------------------------------------------------
 
-lspconfig.powershell_es.setup {
+vim.lsp.config("clangd", {})
+vim.lsp.config("gopls", {})
+vim.lsp.config("cssls", {})
+vim.lsp.config("jsonls", {})
+vim.lsp.config("bashls", {})
+vim.lsp.config("marksman", {})
+vim.lsp.config("pylsp", {})
+vim.lsp.config("ts_ls", {})
+vim.lsp.config("zls", {})
+vim.lsp.config("ruby_lsp", {})
+vim.lsp.config("yamlls", {})
+vim.lsp.config("lemminx", {})
+
+vim.lsp.config("powershell_es", {
   cmd = {
     "pwsh", "-NoLogo", "-NoProfile", "-Command",
     "~/.powershell_es/PowerShellEditorServices/Start-EditorServices.ps1",
     "-HostName", "nvim",
     "-HostProfileId", "nvim",
     "-HostVersion", "1.0.0",
-    "-LogLevel", "Information", -- not "Normal"
-    "-Stdio",                   -- critical: forces LSP over stdio
+    "-LogLevel", "Information",
+    "-Stdio",
     "-BundledModulesPath", "~/.powershell_es/modules"
   },
   filetypes = { "ps1" },
-  root_dir = lspconfig.util.root_pattern(".git")
-}
+  root_dir = vim.fs.root(0, { ".git" }),
+})
 
-lspconfig.html.setup {
+vim.lsp.config("html", {
   settings = {
     html = {
       format = {
-        wrapLineLength = 150
-      }
-    }
-  }
-}
+        wrapLineLength = 150,
+      },
+    },
+  },
+})
 
-lspconfig.lua_ls.setup {
+vim.lsp.config("lua_ls", {
   settings = {
     Lua = {
       diagnostics = {
-        -- Get the language server to recognize the `vim` global
-        globals = {
-          'vim'
-        }
+        globals = { "vim" },
       },
       format = {
-        enable = true
-      }
-    }
-  }
-}
+        enable = true,
+      },
+    },
+  },
+})
 
-lspconfig.rust_analyzer.setup {
-  -- Server-specific settings. See `:help lspconfig-setup`
+vim.lsp.config("rust_analyzer", {
   settings = {
-    ['rust-analyzer'] = {},
-  }
-}
+    ["rust-analyzer"] = {},
+  },
+})
 
--- Global mappings.
--- See `:help vim.diagnostic.*` for documentation on any of the below functions
+-----------------------------------------------------------
+-- 2. Enable all configured servers
+-----------------------------------------------------------
 
-vim.keymap.set('n', '<leader>ñl', vim.diagnostic.goto_prev)
-vim.keymap.set('n', '<leader>lñ', vim.diagnostic.goto_next)
--- vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float)
--- vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist)
+vim.lsp.enable({
+  "clangd",
+  "gopls",
+  "cssls",
+  "jsonls",
+  "bashls",
+  "marksman",
+  "pylsp",
+  "ts_ls",
+  "zls",
+  "ruby_lsp",
+  "yamlls",
+  "lemminx",
+  "powershell_es",
+  "html",
+  "lua_ls",
+  "rust_analyzer",
+})
 
--- Use LspAttach autocommand to only map the following keys
--- after the language server attaches to the current buffer
-vim.api.nvim_create_autocmd('LspAttach', {
-  group = vim.api.nvim_create_augroup('UserLspConfig', {}),
+-----------------------------------------------------------
+-- 3. Global diagnostic keymaps
+-----------------------------------------------------------
+
+vim.keymap.set("n", "<leader>ñl", vim.diagnostic.goto_prev)
+vim.keymap.set("n", "<leader>lñ", vim.diagnostic.goto_next)
+
+-----------------------------------------------------------
+-- 4. LspAttach: buffer-local keymaps
+-----------------------------------------------------------
+
+vim.api.nvim_create_autocmd("LspAttach", {
+  group = vim.api.nvim_create_augroup("UserLspConfig", {}),
   callback = function(ev)
-    -- Enable completion triggered by <c-x><c-o>
-    -- vim.bo[ev.buf].omnifunc = 'v:lua.vim.lsp.omnifunc'
-
-    -- Buffer local mappings.
-    -- See `:help vim.lsp.*`for documentation on any of the below functions
     local opts = { buffer = ev.buf }
 
-    vim.keymap.set('n', ',,', vim.lsp.buf.definition, opts)
-    vim.keymap.set('n', '..', vim.lsp.buf.declaration, opts)
-    vim.keymap.set('n', '--', vim.lsp.buf.implementation, opts)
-    vim.keymap.set('n', '<leader>e', vim.lsp.buf.hover, opts)
-    vim.keymap.set('n', '<leader>re', vim.lsp.buf.rename, opts)
-    vim.keymap.set({ 'n', 'v' }, '<leader>ca', vim.lsp.buf.code_action, opts)
-    vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
+    vim.keymap.set("n", ",,", vim.lsp.buf.definition, opts)
+    vim.keymap.set("n", "..", vim.lsp.buf.declaration, opts)
+    vim.keymap.set("n", "--", vim.lsp.buf.implementation, opts)
+    vim.keymap.set("n", "<leader>e", vim.lsp.buf.hover, opts)
+    vim.keymap.set("n", "<leader>re", vim.lsp.buf.rename, opts)
+    vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, opts)
+    vim.keymap.set("n", "gr", vim.lsp.buf.references, opts)
 
-    -- format buffer
-    vim.keymap.set('n', '<leader>f', function()
-      vim.lsp.buf.format { async = true }
+    vim.keymap.set("n", "<leader>f", function()
+      vim.lsp.buf.format({ async = true })
     end, opts)
-
-    -- vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, opts)
-    -- vim.keymap.set('n', '<leader>wa', vim.lsp.buf.add_workspace_folder, opts)
-    -- vim.keymap.set('n', '<leader>wr', vim.lsp.buf.remove_workspace_folder, opts)
-    -- vim.keymap.set('n', '<leader>wl', function()
-    --     print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
-    -- end, opts)
-    -- vim.keymap.set('n', '<leader>D', vim.lsp.buf.type_definition, opts)
   end,
 })
