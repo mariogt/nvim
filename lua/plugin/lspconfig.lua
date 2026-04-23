@@ -89,8 +89,13 @@ vim.lsp.enable({
 -- 3. Global diagnostic keymaps
 -----------------------------------------------------------
 
-vim.keymap.set("n", "<leader>ñl", vim.diagnostic.goto_prev)
-vim.keymap.set("n", "<leader>lñ", vim.diagnostic.goto_next)
+vim.keymap.set("n", "<leader>ñl", function()
+  vim.diagnostic.jump({ count = -1, float = true })
+end, { desc = "Go to previous diagnostic" })
+
+vim.keymap.set("n", "<leader>lñ", function()
+  vim.diagnostic.jump({ count = 1, float = true })
+end, { desc = "Go to next diagnostic" })
 
 -----------------------------------------------------------
 -- 4. LspAttach: buffer-local keymaps
