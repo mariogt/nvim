@@ -37,7 +37,12 @@ vim.lsp.config("html", {
   settings = {
     html = {
       format = {
-        wrapLineLength = 150,
+        wrapLineLength = 120,
+      },
+    },
+    javascript = {
+      format = {
+        insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces = true,
       },
     },
   },
