@@ -17,6 +17,7 @@ vim.lsp.config("zls", {})
 vim.lsp.config("ruby_lsp", {})
 vim.lsp.config("yamlls", {})
 vim.lsp.config("lemminx", {})
+vim.lsp.config("ols", {})
 
 vim.lsp.config("powershell_es", {
   cmd = {

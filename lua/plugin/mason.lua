@@ -18,6 +18,7 @@ require("mason-lspconfig").setup {
     "herb_ls",
     "yamlls",
     "lemminx",
-    "powershell_es"
+    "powershell_es",
+    "ols"
   }
 }
