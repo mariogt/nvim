@@ -19,6 +19,7 @@ require("mason-lspconfig").setup {
     "yamlls",
     "lemminx",
     "powershell_es",
-    "ols"
+    "ols",
+    "phpactor"
   }
 }
