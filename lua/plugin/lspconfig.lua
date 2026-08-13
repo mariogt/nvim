@@ -5,7 +5,6 @@
 -- 1. Language server configurations (new API)
 -----------------------------------------------------------
 
-vim.lsp.config("clangd", {})
 vim.lsp.config("gopls", {})
 vim.lsp.config("cssls", {})
 vim.lsp.config("jsonls", {})

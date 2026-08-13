@@ -18,12 +18,10 @@ require("lazy").setup({
   -- telescope
   {
     'nvim-telescope/telescope.nvim',
-    tag = 'v0.2.0',
     dependencies = { 'nvim-lua/plenary.nvim' },
   },
   -- telescope extensions
   { 'fhill2/telescope-ultisnips.nvim' },
-  { 'nvim-lua/popup.nvim' },
   -- telscope image preview
   { 'nvim-telescope/telescope-media-files.nvim' },
 
@@ -35,7 +33,7 @@ require("lazy").setup({
   { 'craftzdog/solarized-osaka.nvim' },
   { 'rebelot/kanagawa.nvim' },
   { "rose-pine/neovim",               name = "rose-pine" },
-  { "mariogt/gruvbox.nvim",           priority = 1000,   config = true, opts = ... },
+  { "mariogt/gruvbox.nvim",           priority = 1000,   config = true, opts = {} },
   { "NLKNguyen/papercolor-theme" },
 
   -- status line
@@ -49,7 +47,6 @@ require("lazy").setup({
 
   -- mix
   { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
-  { 'nvim-treesitter/playground' },
   { "nvim-lua/plenary.nvim" },
   {
     "ThePrimeagen/harpoon",
@@ -120,8 +117,7 @@ require("lazy").setup({
   -- },
 
   -- vim-tmux-navigator
-  { 'christoomey/vim-tmux-navigator' },
-  lazy = true,
+  { 'christoomey/vim-tmux-navigator', lazy = true },
 
   -- autopair
   {
